@@ -48,7 +48,7 @@
 | `queue_id` | UUID (Foreign Key) | Посилання на `queues.id` |
 | `phone_number` | VARCHAR(20) | Номер телефону (ідентифікатор клієнта) |
 | `client_name` | VARCHAR(100) | Ім'я з анкети |
-| `status` | VARCHAR(50) | 'waiting' (очікує), 'skipped' (пропущено), 'served' (обслуговано) |
+| `status` | VARCHAR(50) | 'waiting', 'in_progress', 'skipped', 'served' |
 | `priority` | BOOLEAN | Чи має ця людина пріоритет (переміщена на 1 місце) |
 | `ticket_number` | INTEGER | Порядковий номер у цій конкретній черзі (1, 2, 3...) |
 | `created_at` | TIMESTAMP | Час, коли людина стала в чергу |
